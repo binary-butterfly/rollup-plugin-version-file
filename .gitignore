@@ -1,0 +1,8 @@
+node_modules/
+dist/
+coverage/
+
+.idea/
+.vs_code/
+
+.DS_STORE
