@@ -12,6 +12,9 @@
     "url": "git+https://github.com/binary-butterfly/rollup-plugin-version-file.git"
   },
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@binary-butterfly/eslint-plugin-no-new-comparisons": "^1.0.0",
     "@types/node": "^20.11.24",
