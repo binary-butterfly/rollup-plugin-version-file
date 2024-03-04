@@ -7,13 +7,13 @@ process.
 
 ## Usage
 
-First install the plugin `npm i --save-dev @binary-butterfly/rollup-plugin-version-file`.
+First install the plugin `npm i --save-dev @binary-butterfly/rollup-plugin-version-file`.  
 Then, in your rollup config add it to the plugins array:
 
 ```js
 import versionFile from '@binary-butterfly/rollup-plugin-version-file';
 
-{
+export default {
     // ... other config
     plugins: [
         // ... other plugins
@@ -27,11 +27,17 @@ import versionFile from '@binary-butterfly/rollup-plugin-version-file';
 }
 ```
 
-The config parameters given in that example are the defaults, so if you want to use these settings, you can not provide
-any value for them.
+The config parameters given in that example are the defaults, so if you want to use these settings, you may forego
+providing a value for them.
 
 ## Config parameters
 
 - `outputPath`: Where to store the version file, relative to your project root directory
 - `packageFilePath`: Where to find your `package.json` file, relative to your project root directory
 - `log`: If you want the plugin to log what it wrote once it is done
+
+## Vite
+
+Vite uses rollup internally for production builds.
+To use this plugin within vite, all you have to do is add the above configuration within your vite
+config's `build.rollupOptions`.
