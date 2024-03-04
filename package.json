@@ -1,6 +1,6 @@
 {
   "name": "@binary-butterfly/rollup-plugin-version-file",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Automatically write the current version into a static file",
   "license": "MIT",
   "type": "module",
