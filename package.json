@@ -1,6 +1,6 @@
 {
   "name": "@binary-butterfly/rollup-plugin-version-file",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Automatically write the current version into a static file",
   "license": "MIT",
   "type": "module",
@@ -44,6 +44,7 @@
   "files": [
     "dist/*"
   ],
+  "types": "./dist/src/index.d.ts",
   "keywords": [
     "vite",
     "rollup"
